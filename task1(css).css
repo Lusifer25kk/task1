@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .pricing-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+   }
+   
+   .pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+   }
+   
+   h2 {
+    margin-bottom: 20px;
+   }
+   
+   h3 {
+    color: #f16a68;
+    margin-bottom: 20px;
+   }
+   
+   ul {
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   li {
+    margin-bottom: 10px;
+   }
+   
+   button {
+    background-color: #f16a68;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+   }
+   
+   button:hover {
+    background-color: #ddd;
+    color: black;
+   }
+
+   .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+    pointer-events: none;
+    animation: animateBackground 10s infinite;
+  }
+
+  @keyframes animateBackground {
+    0% { background-color: #4d4240; }
+    25% { background-color: #dbc06f; }
+    50% { background-color: #7fffd4; }
+    75% { background-color: #9370db; }
+    100% { background-color: #53bdbb; }
+  }
+  
